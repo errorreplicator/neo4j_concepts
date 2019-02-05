@@ -29,7 +29,7 @@ def create_node(ses,label,name,number):
 def create_node_relation(ses,label,name,wn_name,relation):
     #code goes here
 
-def nodes_outof_wordnet(ses,word):#take it to wn_cypher.
+def nodes_outof_wordnet(ses,word):#take it to wn_cypher..
     hypernyms,relation = extract_wn.get_hypo_tree(word)
     for hype_name in hypernyms:
         create_node(ses,'animal',hype_name,1)
